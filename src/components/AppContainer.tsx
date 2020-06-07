@@ -4,8 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack'
 import RickAndMorty from '../screen/RickAndMortyCharacters';
 import RickAndMortyData from '../screen/RickAndMortyData';
 
-
-
 const Stack = createStackNavigator();
 
 const AppNavigationContainer = () => {

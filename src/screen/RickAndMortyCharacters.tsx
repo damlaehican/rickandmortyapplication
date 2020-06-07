@@ -102,23 +102,25 @@ const UsersFetching = (props: any) => {
                         }
                     </Card>
                 </View>
-
             </View>
         )
     }
     return (
         <View style={{ flex: 1, backgroundColor: 'white' }}>
-            <View style={{ justifyContent: 'flex-start' }}>
-                <Input style={{ borderBottomColor: '#abb8c3', borderBottomWidth: 1 }}
-                    leftIcon={{ type: 'evil-icons', name: 'search', color: '#abb8c3' }}
+            <View style={{ justifyContent: 'center', margin: 10,
+            borderColor: '#abb8c3',
+             borderWidth: 1, borderRadius: 10 }}>
+                <Input style={{ }}
+                    leftIcon={{ type: 'evil-icons', name: 'search' }}
                     placeholder='write something to search'
                     onChangeText={text => setText(text)}
                     defaultValue={text}></Input>
+                </View>
+
                 <View style={{ alignSelf: 'center' }}>
                     <TouchableOpacity style={{ backgroundColor: '#c6f2a4', borderWidth: 1, borderRadius: 10, width: 60, borderColor: '#abb8c3' }} onPress={() => { }} >
                         <Text style={{ letterSpacing: 2, textAlign: 'center' }}>Search</Text>
                     </TouchableOpacity>
-                </View>
             </View>
             <View>
                 <FlatList data={characters} renderItem={renderItemConst} onEndReached={({ distanceFromEnd }) => {
